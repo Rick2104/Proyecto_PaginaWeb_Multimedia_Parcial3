@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Formulario 3 </title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css5.css">
+	</head>
+	<body>
+		<!--contenedor del background-->
+			<div class="cuadrado">
+				<div id="container">
+					<header>
+						<h1> Formulario de Formatos Multimedia </h1>
+						<p> Responda las siguientes preguntas: </p> 
+						<hr height = "100" size = "1" color= "#B1D788"> </hr>
+					</header>	
+					<!--incio del cuestionario-->
+					<section>
+						<div id="resultado"></div>
+							<!--mensaje de espuestas-->
+							<form name="quizForm" onsubmit= "return verificarRespuestas()">
+								<!--mensaje de espuestas-->
+								<!--inicio de pregutas -->
+								<h3>1. ASCII es el acrónimo que corresponde a la expresión inglesa: </h3>
+								&nbsp; &nbsp; &nbsp; <input type="radio" name="p1" value="a"> &nbsp; a: American Standard Character for Information Interchange <img id="mal1" src="" /><br/>
+								&nbsp; &nbsp; &nbsp; <input type="radio" name="p1" value="b"> &nbsp; b: American Standard Code for Information Interchange <img id="bien1" src="" /><br/>
+								&nbsp; &nbsp; &nbsp; <input type="radio" name="p1" value="c"> &nbsp; c: American Standard Code for Interchange Information <img id="mal2" src="" /><br/>
+								&nbsp; &nbsp; &nbsp; <input type="radio" name="p1" value="c"> &nbsp; d: American Standard Character for Interchange Information <img id="mal3" src="" /><br/>
+
+
+								<h3>2. ¿Cuál no es un formato de texto? </h3>
+
+								&nbsp; &nbsp; &nbsp;  <input type="radio" name="p2" value="a"> &nbsp; a: BMP <img id="bien2" src="" /><br/>
+								&nbsp; &nbsp; &nbsp;  <input type="radio" name="p2" value="b"> &nbsp; b: RFT <img id="mal4" src="" /><br/>
+								&nbsp; &nbsp; &nbsp;  <input type="radio" name="p2" value="c"> &nbsp; c: PDF <img id="mal5" src="" /><br/>
+								&nbsp; &nbsp; &nbsp;  <input type="radio" name="p2" value="d"> &nbsp; d: DOC <img id="mal5" src="" /><br/>
+
+								<h3>3.	Se trata del archivo de mapa de bits más utilizado entre los formatos de imagen. </h3>
+								
+								&nbsp; &nbsp; &nbsp; <input type="radio" name="p3" value="a"> &nbsp; a: Joint Photographic Experts Group <img id="bien3" src="" /><br/>
+								&nbsp; &nbsp; &nbsp; <input type="radio" name="p3" value="b"> &nbsp; b: Graphics Interchange Format <img id="mal6" src="" /><br/>
+								&nbsp; &nbsp; &nbsp; <input type="radio" name="p3" value="c"> &nbsp; c: Portable Network Graphics <img id="mal7" src="" /><br/>
+								&nbsp; &nbsp; &nbsp; <input type="radio" name="p3" value="d"> &nbsp; d: Encapsuled PostScripct <img id="mal8" src="" /><br/>
+
+								<h3>4.	Lo bueno de ...... es que puede comprimir un archivo fuente original hasta un 60% sin perder un solo bit de datos. </h3>
+								
+								&nbsp; &nbsp; &nbsp; <input type="radio" name="p4" value="a"> &nbsp; a: Audio Interchange File Format <img id="mal9" src="" /><br/>
+								&nbsp; &nbsp; &nbsp; <input type="radio" name="p4" value="b"> &nbsp; b: Free Lossles Audio Codec <img id="bien4" src="" /><br/>
+								&nbsp; &nbsp; &nbsp; <input type="radio" name="p4" value="c"> &nbsp; c: The True Audio <img id="mal10" src="" /><br/>
+								&nbsp; &nbsp; &nbsp; <input type="radio" name="p4" value="d"> &nbsp; d: Apple Lossless Audio Codec <img id="mal11" src="" /><br/>
+
+
+								<h3>5.	¿Qué es RMVB? </h3>
+								
+								&nbsp; &nbsp; &nbsp; <input type="radio" name="p5" value="a"> &nbsp; a: Es el más usual en los dispositivos móviles. <img id="mal12" src="" /><br/>
+								&nbsp; &nbsp; &nbsp; <input type="radio" name="p5" value="b"> &nbsp; b: Es de los más prometedores debido a la democratización de los recursos. <img id="mal13" src="" /><br/>
+								&nbsp; &nbsp; &nbsp; <input type="radio" name="p5" value="c"> &nbsp; c: Es un formato ideal para descargas rápidas, pero con calidad de pista preservada. <img id="bien5" src="" /><br/>
+								&nbsp; &nbsp; &nbsp; <input type="radio" name="p5" value="d"> &nbsp; d: Este es el tipo de archivo más adecuado para la reproducción en YouTube. <img id="mal14" src="" /><br/>
+
+
+								<!--fin inicio de pregutas -->
+								<br> 
+								<br>
+								<center>
+								<input type="submit" name="Enviar" onclick="b1(),b2(),b3(),b4(),b5(),m1(),m2(),m3(),m4(),m5(),m6(),m7(),m8(),m9(),m10(),m11(),m12(),m13(),m14()">
+								</center>
+								<script> 
+									function b1() {
+									let image = document.getElementById("bien1");
+									image.src = "img/bien.png"}
+								</script>
+								<script> 
+									function b2() {
+									let image = document.getElementById("bien2");
+									image.src = "img/bien.png"}
+								</script>
+								<script> 
+									function b3() {
+									let image = document.getElementById("bien3");
+									image.src = "img/bien.png"}
+								</script>								
+								<script> 
+									function b4() {
+									let image = document.getElementById("bien4");
+									image.src = "img/bien.png"}
+								</script>
+								<script> 
+									function b5() {
+									let image = document.getElementById("bien5");
+									image.src = "img/.png"}
+								</script>
+
+								<script> 
+									function m1() {
+									let image = document.getElementById("mal1");
+									image.src = "img/mal.png"}
+								</script>
+								<script> 
+									function m2() {
+									let image = document.getElementById("mal2");
+									image.src = "img/mal.png"}
+								</script>
+								<script> 
+									function m3() {
+									let image = document.getElementById("mal3");
+									image.src = "img/mal.png"}
+								</script>
+								<script> 
+									function m4() {
+									let image = document.getElementById("mal4");
+									image.src = "img/mal.png"}
+								</script>								
+								<script> 
+									function m5() {
+									let image = document.getElementById("mal5");
+									image.src = "img/mal.png"}
+								</script>
+								<script> 
+									function m6() {
+									let image = document.getElementById("mal6");
+									image.src = "img/mal.png"}
+								</script>
+								<script> 
+									function m7() {
+									let image = document.getElementById("mal7");
+									image.src = "img/mal.png"}
+								</script>
+								<script> 
+									function m8() {
+									let image = document.getElementById("mal8");
+									image.src = "img/mal.png"}
+								</script>
+								<script> 
+									function m9() {
+									let image = document.getElementById("mal9");
+									image.src = "img/mal.png"}
+								</script>
+								<script> 
+									function m10() {
+									let image = document.getElementById("mal10");
+									image.src = "img/mal.png"}
+								</script>
+								<script> 
+									function m11() {
+									let image = document.getElementById("mal11");
+									image.src = "img/mal.png"}
+								</script>
+								<script> 
+									function m12() {
+									let image = document.getElementById("mal12");
+									image.src = "img/mal.png"}
+								</script>
+								<script> 
+									function m13() {
+									let image = document.getElementById("mal13");
+									image.src = "img/mal.png"}
+								</script>
+								<script> 
+									function m14() {
+									let image = document.getElementById("mal14");
+									image.src = "img/mal.png"}
+								</script>
+								<p align="right"> <font face = "Arial"><a href="index (1).html"> Salir </a> </font> </p>
+
+								<!--fin boton de envia compovacion-->
+							</form>
+					</section>
+					<!--inicio del cuestionario-->	
+				</div>	
+			</div>	
+		<!--fin contenedor del background-->
+		<!--enlace de js-->
+		<script src="js/script5.js"></script>
+	</body>
+</html>

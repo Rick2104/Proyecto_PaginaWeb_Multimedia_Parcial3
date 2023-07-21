@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Formulario 1 </title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css4.css">
+	</head>
+	<body>
+		<!--contenedor del background-->
+			<div class="cuadrado">
+				<div id="container">
+					<header>
+						<h1> Formulario de Introducción a los Sistemas Interactivos y Multimedia</h1>
+						<p> Responda las siguientes preguntas: </p>
+						<hr height = "100" size = "1" color= "#9453C6"> </hr>
+					</header>	
+					<!--incio del cuestionario-->
+					<section>
+						<div id="resultado"></div>
+							<!--mensaje de espuestas-->
+							<form name="quizForm" onsubmit= "return verificarRespuestas()">
+								<!--mensaje de espuestas-->
+								<!--inicio de pregutas -->
+								<h3>1. Un sistema interactivo se interrelaciona y depende de las acciones de un usuario para realizar una tarea, esto quiere decir… </h3>
+								&nbsp; &nbsp; &nbsp; <input type="radio" name="p1" value="a"> &nbsp; a: Todo sistema en el que interactúan persona y máquina. <img id="bien1" src="" /> <br/>
+								&nbsp; &nbsp; &nbsp; <input type="radio" name="p1" value="b"> &nbsp; b: Todo aparato electrónico que llegue a su alcance. <img id="mal1" src="" /> <br/>
+								&nbsp; &nbsp; &nbsp; <input type="radio" name="p1" value="c"> &nbsp; c: Todo ser viviente con dispositivos en casa. <img id="mal2" src="" /> <br/>
+
+								<h3>2. ¿Qué es la multimedia interactiva? </h3>
+
+								&nbsp; &nbsp; &nbsp;  <input type="radio" name="p2" value="a"> &nbsp; a: Es una tecnología estática que requiere al usuario para la entrega de información. <img id="mal3" src="" /> <br/>
+								&nbsp; &nbsp; &nbsp;  <input type="radio" name="p2" value="b"> &nbsp; b: Son los sistemas que permiten al usuario manipular los contenidos. <img id="mal4" src="" /> <br/>
+								&nbsp; &nbsp; &nbsp;  <input type="radio" name="p2" value="c"> &nbsp; c: Son los sistemas que permiten al usuario interactuar con los contenidos. <img id="bien2" src="" /> <br/> 
+								&nbsp; &nbsp; &nbsp;  <input type="radio" name="p2" value="d"> &nbsp; d: Es una tecnología estática no requiere al usuario para la entraga de información. <img id="mal5" src="" /> <br/>
+
+								<h3>3.	Es un término que se emplea en los sistemas u objetos que se valen de diversos medios para transmitir o presentar un tipo de información combinando de manera simultánea textos, imágenes, audios, entre otros. </h3>
+								
+								&nbsp; &nbsp; &nbsp; <input type="radio" name="p3" value="a"> &nbsp; a: Publicidad <img id="mal6" src="" /> <br/>
+								&nbsp; &nbsp; &nbsp; <input type="radio" name="p3" value="b"> &nbsp; b: Sistema <img id="mal7" src="" /> <br/>
+								&nbsp; &nbsp; &nbsp; <input type="radio" name="p3" value="c"> &nbsp; c: Multimedia <img id="bien3" src="" /> <br/> 
+								&nbsp; &nbsp; &nbsp; <input type="radio" name="p3" value="d"> &nbsp; d: Medios publicitarios <img id="mal8" src="" /> <br/>
+
+								<h3>4.	Una de las características de los sistemas multimedia es: </h3>
+								
+								&nbsp; &nbsp; &nbsp; <input type="radio" name="p4" value="a"> &nbsp; a: La información que manejan debe representarse físicamente. <img id="mal9" src="" /> <br/>
+								&nbsp; &nbsp; &nbsp; <input type="radio" name="p4" value="b"> &nbsp; b: Deben ser controlados por computadora. <img id="bien4" src="" /> <br/>
+								&nbsp; &nbsp; &nbsp; <input type="radio" name="p4" value="c"> &nbsp; c: La interfaz para la presentación inicial de los medios nunca suele ser interactiva. <img id="mal10" src="" /> <br/>
+
+								<h3>5.	La multimedia se emplea en áreas como el desarrollo humano y en los que se hace un amplio uso de: </h3>
+								
+								&nbsp; &nbsp; &nbsp; <input type="radio" name="p5" value="a"> &nbsp; a: Textos, imagenes, audios <img id="bien5" src="" /> <br/>
+								&nbsp; &nbsp; &nbsp; <input type="radio" name="p5" value="b"> &nbsp; b: Textos, imagenes, dispositivos <img id="mal11" src="" /> <br/>
+								&nbsp; &nbsp; &nbsp; <input type="radio" name="p5" value="b"> &nbsp; c: Textos, revistas, publicidad <img id="mal12" src="" /> <br/>
+
+								<!--fin inicio de pregutas -->
+								<br> 
+								<br>
+								
+								<img id="image" src="" />
+
+								<center>
+								<input type="submit" name="Enviar" onclick="b1(),b2(),b3(),b4(),b5(),m1(),m2(),m3(),m4(),m5(),m6(),m7(),m8(),m9(),m10(),m11(),m12(),m13(),m14()">
+								</center>
+
+
+								<script> 
+									function b1() {
+									let image = document.getElementById("bien1");
+									image.src = "img/bien.png"}
+								</script>
+								<script> 
+									function b2() {
+									let image = document.getElementById("bien2");
+									image.src = "img/bien.png"}
+								</script>
+								<script> 
+									function b3() {
+									let image = document.getElementById("bien3");
+									image.src = "img/bien.png"}
+								</script>								
+								<script> 
+									function b4() {
+									let image = document.getElementById("bien4");
+									image.src = "img/bien.png"}
+								</script>
+								<script> 
+									function b5() {
+									let image = document.getElementById("bien5");
+									image.src = "img/bien.png"}
+								</script>
+
+								<script> 
+									function m1() {
+									let image = document.getElementById("mal1");
+									image.src = "img/mal.png"}
+								</script>
+								<script> 
+									function m2() {
+									let image = document.getElementById("mal2");
+									image.src = "img/mal.png"}
+								</script>
+								<script> 
+									function m3() {
+									let image = document.getElementById("mal3");
+									image.src = "img/mal.png"}
+								</script>
+								<script> 
+									function m4() {
+									let image = document.getElementById("mal4");
+									image.src = "img/mal.png"}
+								</script>								
+								<script> 
+									function m5() {
+									let image = document.getElementById("mal5");
+									image.src = "img/mal.png"}
+								</script>
+								<script> 
+									function m6() {
+									let image = document.getElementById("mal6");
+									image.src = "img/mal.png"}
+								</script>
+								<script> 
+									function m7() {
+									let image = document.getElementById("mal7");
+									image.src = "img/mal.png"}
+								</script>
+								<script> 
+									function m8() {
+									let image = document.getElementById("mal8");
+									image.src = "img/mal.png"}
+								</script>
+								<script> 
+									function m9() {
+									let image = document.getElementById("mal9");
+									image.src = "img/mal.png"}
+								</script>
+								<script> 
+									function m10() {
+									let image = document.getElementById("mal10");
+									image.src = "img/mal.png"}
+								</script>
+								<script> 
+									function m11() {
+									let image = document.getElementById("mal11");
+									image.src = "img/mal.png"}
+								</script>
+								<script> 
+									function m12() {
+									let image = document.getElementById("mal12");
+									image.src = "img/mal.png"}
+								</script>
+								<script> 
+									function m13() {
+									let image = document.getElementById("mal13");
+									image.src = "img/mal.png"}
+								</script>
+								<script> 
+									function m14() {
+									let image = document.getElementById("mal14");
+									image.src = "img/mal.png"}
+								</script>
+
+
+								<p align="right"> <font face = "Arial"><a href="index (1).html">Salir</a> </font> </p>
+
+								<!--fin boton de envia compovacion-->
+							</form>
+					</section>
+					<!--incio del cuestionario-->	
+				</div>	
+			</div>	
+			
+		<!--fin contenedor del background-->
+		<!--enlace de js-->
+		<script src="js/script4.js"></script>
+	</body>
+</html>

@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio Web Sistemas Interactivos y Multimedia</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body bgcolor='rgb(55,56,57)'
+    
+    <header class="header" id="inicio">
+        <img class="hamburguer" src="img/Menu.jpg" alt="">
+        <div>
+            <audio id="sonido">
+                <source src="sonido.mp3" type="audio/mpeg">
+            </audio>
+            <button id="playPauseBTN" onclick="playPause()">Música</button>
+        </div>
+        <script type="text/javascript">
+
+            var sonido = document.getElementById('sonido');
+            var playPauseBTN = document.getElementById('playPauseBTN');
+            var count = 0;
+            function playPause(){
+                if(count==0){
+                    count= 1;
+                    sonido.play();
+                }else{
+                    count=0;
+                    sonido.pause();
+                }
+
+            }
+        </script>
+
+        <nav class="menu-navegacion">
+                <a href="#inicio">Inicio</a>
+                <a href="#intoduccion">Introducción</a>
+                <a href="#aplicaciones">Aplicaciones</a>
+                <a href="#info"><pre>Información y comunicaciones </pre> </a>
+                <a href="#interactiva"><pre>Multimedia Interactiva</pre> </a>
+                <a href="#publicidad"><pre>Publicidad</pre> </a>
+                <a href="#marketing"><pre>Marketing</pre> </a>
+                <a href="#educacion"><pre>Educacion y Entretenimiento</pre> </a>
+                <a href="#formato">Formatos</a>
+                <a href="#texto"><pre>Texto</pre> </a>
+                <a href="#graficos"><pre>Gráficos e Imágenes</pre> </a>
+                <a href="#audio"><pre>Audio</h3> </pre> </a>
+                <a href="#video"><pre>Video</h3> </pre> </a>
+                <a href="#creadores">Creadores</a>
+                <a href="#galeria">Galería</a>
+                <a href="#footer">Contacto</a>
+                
+        </nav>
+        <div class="contenedor head">
+            <h1 class="titulo">SISTEMAS INTERACTIVOS Y MULTIMEDIA</h1>
+            <p class="copy">"Internet es mucho más que una tecnología. Es un medio de comunicación, de interacción y de organización social".</p>
+			<p class="copy" align=right >- Manuel Castells</p>
+        </div>
+        
+    </header>
+    <main>
+        <section class="contenedor" id="intoduccion">
+            <h2 class="subtitulo">Introducción a los Sistemas Interactivos y Multimedia</h2>
+            <div class="contenedor-servicio">
+                <img src="img/introduccion.svg" alt="">
+                
+                <div class="checklist-servicio">
+                   <div class="service">
+                        <h3 class="n-service"><span class="number">1</span>¿Qué es un sistema interactivo?</h3>
+                        <p> Es un sistema informático que se interrelaciona y depende de las acciones de un usuario para realizar una tarea, es decir, todo sistema en el que interactúan persona y máquina. Podríamos considerar interactivo desde un reproductor de DVD hasta un videojuego en el que nuestras acciones determinan el trascurso de la acción.</p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">2</span>¿Qué es multimedia interactiva?</h3>
+                        <p> Se refiere a todos aquellos sistemas que se emplean en la actualidad donde mediante diversos elementos, se permite la interacción del usuario con los contenidos de manera diferente, haciendo referencia a la evolución que los sistemas multimedia han sufrido con el paso de los años.</p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">3</span>Multimedia y conceptos básicos</h3>
+                        <p> Multimedia es un término que se emplea en los sistemas u objetos que se valen de diversos medios para transmitir o presentar un tipo de información combinando, de manera simultánea, textos, imágenes, audios, entre otros.</p>
+						<p>En este sentido, la multimedia se refiere a la integración de diferentes formas de medios que posibilitan transmitir una información en diversos formatos para que el usuario pueda comprenderla de manera más clara.</p>
+						<p>Sin embargo, la multimedia también se emplea en otras áreas del desarrollo humano como en, por ejemplo, actividades artísticas, investigaciones científicas, medicina, ingeniería, negocios y muchos más, en los que se hace un amplio uso de:</p><br>
+                        <div class="vinetas">
+                            <li>Textos</li>
+                            <li>Imágenes</li>
+                            <li>Audios</li>
+                            <li>Gráficos o cuadros</li>
+                            <li>Vídeos</li>
+                            <li>Animaciones</li>
+                        </div>
+                    </div>
+					<div class="service">
+                        <h3 class="n-service"><span class="number">4</span>Características de los Sistemas Multimedia</h3>
+                        <p> Un sistema multimedia tiene cuatro características básicas:</p>
+						<p> 1.	Los sistemas multimedia deben ser controlados por computadora.</p>
+						<p> 2.	Los sistemas multimedia están integrados.</p>
+						<p> 3.	La información que manejan debe representarse digitalmente.</p>
+                        <div class="flex-form">
+                            <p> 4.	La interfaz para la presentación final de los medios suele ser interactiva.</p>
+                            <a href="introduccion.html"><img class="boton" src="img\boton.png " ></a>
+                        </div>
+                       
+                </div>
+            </div>
+        </section>
+		<section class="contenedor" id="aplicaciones">
+            <h2 class="subtitulo">Aplicaciones</h2>
+            
+            <div class="contenedor-servicio">
+                <div class="checklist-servicio">
+                    <div class="service" id="info">
+                        <h3 class="n-service"><span class="number">1</span>Información y comunicaciones</h3>
+                        <p> Facilita la comprensión de la información, ya que mejora las interfaces tradicionales basadas solo en texto, proporciona beneficios importantes que atraen, mantienen la atención y el interés.</p>
+                    </div>
+                    <div class="service" id="interactiva">
+                        <h3 class="n-service"><span class="number">2</span>¿Qué es multimedia interactiva?</h3>
+                        <p> Se refiere a todos aquellos sistemas que se emplean en la actualidad donde mediante diversos elementos, se permite la interacción del usuario con los contenidos de manera diferente, haciendo referencia a la evolución que los sistemas multimedia han sufrido con el paso de los años.</p>
+                        <br>
+                        <h2 class="copy">Características</h2><br>
+                        <div class="vinetas">
+                            <li>Transmitir mensajes o contenidos expresados en diferentes medios, de manera simultánea.</li>
+                            <li>Expresa mensajes informativos unitarios mediante texto e imagen en presa, y mediante imagen y sonido en televisión.</li>
+                            
+                            <li>Posee una esencial practica referente a la información y tecnología.</li>
+                        </div>
+                        <br><h2 class="copy">Utilización de la multimedia</h2></br>
+                        <p> Periodismo: Paginas web de prensa, blogs periodísticos, artículos de opinión.</p>
+                        <p> Artículos científicos: Da paso a que se comparta información hacia un gran publico que en otros tiempos no se podría.</p>
+                        <p> Redes sociales: Permite compartir información y comunicarnos de manera sencilla.</p>
+                        <p> Bibliotecas virtuales: Nos permite compartir información de manera asíncrona.</p>
+                    </div>
+                </div>
+                <img src="img/app.jpg" alt="">
+            </div>
+          
+            <div class="contenedor-servicio">
+                <img src="img/publicidad.png" alt="">
+                <div class="checklist-servicio">
+                    <div class="service" id="publicidad">
+                        <h3 class="n-service"><span class="number">3</span>Publicidad</h3>
+                        <p> Es la actividad que tiene como objetivo anunciar las bondades del producto a través de los medios publicitarios y apoyar así la acción de ventas.</p>
+                        <br><h2 class="copy">Principales medios de publicidad</h2></br>
+                        <div class="vinetas">
+                            <li>    TV</li>
+                            <li>    Prensa</li>
+                            <li>    Radio</p>
+                            <li>    Revistas</li>
+                            <li>    Internet</li>
+                        </div>
+                        <br><h2 class="copy">Clases de publicidad</h2></br>
+                        <p> Publicidad primaria o básica: Es la que se hace con el objeto de mantener la demanda de los productos existentes, cuyas acciones publicitarias no pueden suspenderse por el hecho de gozar de buena aceptación al producto.</p>
+                        <br><p> Publicidad de marca: Se refiere a la comunicación publicitaria selectiva, especialmente para anunciar determinadas marcas de bienes o servicios, creadas con el fin de propender por la aceptación creciente por parte de los consumidores y asegurar su demanda, una vez cumplan los objetivos de posicionamiento.</p></br>
+                        <br><p> Publicidad de lanzamiento: Es una publicidad planeada con esfuerzos especiales, tendiente a influir en los consumidores, dándoles a conocer las bondades de un producto nuevo.</p></br>
+                        <br><p> Publicidad de imagen: Es la que hace una empresa con el fin de crear y mantener su prestigio comercial, anunciando las políticas de buen servicio y calidad total puestas en marcha.</p></br>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-servicio">
+                
+                <div class="checklist-servicio">
+                    <div class="service" id="marketing">
+                        <h3 class="n-service"><span class="number">4</span>Marketing</h3>
+                        <p> Iniciativa de publicidad que envuelve la utilización de diferentes medios de comunicación. Se utilizan de diferentes medios de comunicación. Se utilizan medios primarios y los demás medios se utilizan como soporte de la campaña publicitaria.</p>
+                        <br><h2 class="copy">¿Qué aporta?</h2></br>
+                        <p> Los contenidos multimedia son fundamentales para desarrollar una estrategia de marketing digital porque traen beneficios como: atraer a tu cliente ideal de forma creativa.</p>
+                        <br><h2 class="copy">Etapas en la creación de un producto marketing </h2></br>
+                        <div class="vinetas">
+                            <p> 1.	Diseño del producto</p>
+                            <p> 2.	Producción</p>
+                            <p> 3.	Integración y prueba</p>
+                            <p> 4.	Promoción y distribución</p>
+                        </div>
+                    </div>
+                </div>
+                <img src="img/educacion_entretenimiento.svg" alt="">
+            </div>
+
+            <div class="contenedor-servicio">
+                <img src="img/marketing.svg" alt="">
+                <div class="checklist-servicio">
+                    <div class="service" id="educacion">
+                        <br><h3 class="n-service"><span class="number">5</span>Educación y entretenimiento</h3></br>
+                        <p> Los multimedios se han convertido en una fuerza enorme en el mundo actual de la tecnología. La influencia de la multimedia puede verse en todos los aspectos de la vida humana.</p>
+                        <br><h2 class="copy">Aplicación de la multimedia en la educación</h2></br>
+                        <div class="vinetas">
+                            <li>Fomenta a los estudiantes hacer interfaces para presentaciones finales de los cursos preparados.</li>
+                            <li>Puede convertirse en un punto de partida para la reflexión sobre las relaciones de la tecnología con la educación.</li>
+                        </div>
+                        <br><h2 class="copy">Ventajas de la multimedia en la educación</h2></br>
+                        <div class="vinetas">
+                            <li>Permite la concentración de muchos recursos diferentes y mucha información disponible desde cualquier lugar en cualquier momento.</li>
+                            <li>La aplicación de material multimedia radica en que los alumnos son lo que la generan siendo esto más didáctico.</li>
+                            <li>Permite pasar de lo informático a lo significativo, ya que la información, el análisis, la práctica y la retroalimentación instantánea.</li>
+                            
+                        </div>
+                        <br><h2 class="copy">Características de los sistemas multimedia en la educación</h2></br>
+                        <div class="flex-form">
+                            <div class="vinetas">
+                                <li>Versatilidad</li>
+                                <li>Originalidad</li>
+                                <li>Calidad del entorno</li>
+                                <li>Audiovisual</li>
+                                <li>Navegación e interacción</li>
+                                <li>Potencialidad de los recursos didácticos</li>
+                            </div>
+                            <a href="aplicaciones.html"><img class="boton" src="img\boton2.png " ></a>
+                        </div>
+						
+                    </div>
+                </div>
+            </div>
+		</section>
+		<section class="contenedor" id="formato">
+            <h2 class="subtitulo">Formatos</h2>
+            <div class="contenedor-servicio">
+                <div class="checklist-servicio">
+                    <div class="service" id="texto">
+                        <br><h3 class="n-service"><span class="number">1</span>Formatos de texto</h3></br>
+                        <p> Es de los primeros formatos utilizados en la WEB, es la forma de comunicación más habitual entre las personas, dentro de este grupo tenemos:</p>
+                        <br><h2 class="copy">Texto sin formato</h2></br>
+                        <p>ASCII es el acrónimo que corresponde a la expresión inglesa American Standard Code for Information Interchange. Dicha frase puede traducirse como Código Estándar Americano para el Intercambio de Información. Se trata de un patrón de codificación que se emplea en el ámbito de la informática.</p>
+                        <br><h2 class="copy">Texto con formato</h2></br>
+                        <p> <h4> RFT:</h4> Rich Text Format (RTF) es un formato de archivo informático desarrollado en 1987 por Microsoft que se utiliza para crear todo tipo de documentación. La ventaja que tienen por sobre los archivos DOC o DOCX es que la gran mayoría de los programas de procesamiento de texto pueden abrir los archivos RTF con absoluta compatibilidad.</p><br>
+                        <p> <h4> PDF: </h4>Significa Portable Document Format (Formato Portátil de Documento), usado para mostrar documentos en la forma electrónica independiente del software, hardware o sistema operativo donde se visualiza. Originalmente desarrollado por Adobe® Systems como un formato de ficheros universalmente compatible basado en el formato PostScript, se ha convertido en un estándar internacional de facto para intercambio de documentos e información.</p><br>
+                        <h4>Texto lineal e hipertexto</h4><br>
+                        <h4> Lenguajes de marcas (HTML) y Metalenguajes (SGML, XML, etc.)</h4>
+                    </div>
+                </div>
+                <img src="img/texto.jpg" alt="">
+            </div>
+            <div class="contenedor-servicio">
+                <img src="img/Formatos-de-imagen.png" alt="">
+                <div class="checklist-servicio">
+                    <div class="service" id="graficos">
+                        <br><h3 class="n-service"><span class="number">2</span>Formatos de gráficos e imágenes</h3></br>
+                        <p>Los formatos gráficos son empleados para representar esquemas, planos, dibujos lineales, entre otros, se conforman de primitivas gráficas como: puntos, segmentos, círculos, etc. </p>
+                        <p> Por lo tanto, deben ser interpretadas antes de mostrarse al usuario. Al ser primitivas, éstas se pueden modificar de varias formas (traslación, escalado, rotación, etc.). Si se consideran los gráficos vectoriales, estos ocupan poco espacio y se generan de forma interactiva.</p>
+                        <p>A continuación, presentamos diferentes formatos:</p>
+                        <br><h2 class="copy">JPEG (Joint Photographic Experts Group)</h2></br>
+                        <p> Se trata del archivo de mapa de bits más utilizado entre los formatos de imagen. Su nombre procede de un comité de expertos que creó un estándar de comprensión y codificación de archivos e imágenes fijas.</p>
+                        <p> Sus características de compresión lo hacen un archivo muy ligero y que apenas ocupa espacio. Pero esto es a costa de su calidad, aunque puede ser ajustada en el momento de guardar. Muy común en el ámbito de la fotografía digital y el diseño gráfico.</p>
+                        <br><h2 class="copy">GIF (Graphics interchange formato)</h2></br>
+                        <p> Se traduce como Formato de Intercambio de Gráficos. Es un formato gráfico muy utilizado en internet, tanto para imágenes como para animaciones.</p>
+                        <p> A nivel técnico su formato es en mapa de bits y bastante antiguo. Únicamente soporta 256 colores. Esto produce una pérdida de calidad en imágenes que posean un mayor número de colores. Lo verdaderamente útil de este formato es que admite animación, o lo que es lo mismo, imágenes en movimiento.</p>
+                        <br><h2 class="copy">PNG (Portable Network Graphics)</h2></br>
+                        <p> Es un formato gráfico basado en un algoritmo de compresión sin pérdida para bitmaps. Este formato fue desarrollado en buena parte para solventar las deficiencias del formato GIF. Es capaz de utilizar canales RGB, lo que permite su modificación en programas de edición. También, permite almacenar imágenes con una mayor profundidad de contraste. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-servicio">
+                
+                <div class="checklist-servicio">
+                    <div class="service">
+                        <br><h2 class="copy">BMP (Windows Bitmap)</h2></br>
+                        <p> Es un formato de mapa de bits, propio del sistema operativo Microsoft Windows, para Paint. Puede guardar imágenes de 24 bits (16,7 millones de colores), 8 bits (256 colores) y menos. Ofrece buenas calidades de imagen, pero ocupan una significativa cantidad de espacio en el disco. Es poco útil para internet. </p>
+                        <br><h2 class="copy">RAW</h2></br>
+                        <p> El formato de imágenes raw, traducido como «bruto» o «en crudo» siguiendo el término anglosajón para denominar a los brutos de cámara. Es un formato en mapa de bits, que contiene la totalidad de los datos de la imagen tal y como ha sido captada por el sensor.</p>
+                        <br><h2 class="copy">EPS (Encapsuled PostScript)</h2></br>
+                        <p> Es un formato de archivo gráfico, en lenguaje PostScript. De forma generalizada se conoce más como archivo de imagen vectorial. Se utiliza en programas como Illustrator. Y también para impresión ya que no tiene problemas de resolución y puede imprimirse en todo tipo de tamaños. Es necesario software específico de diseño gráfico para poder abrir los archivos.</p>
+                        <br><h2 class="copy">TIFF (Tagged Image File Format)</h2></br>
+                        <p> Es un formato de archivo informático para almacenar imágenes de mapa de bits. Es prevalente en la industria gráfica y en la fotografía profesional por su versatilidad.</p>
+                        <p>Formato bastante habitual en el mundo de la impresión. No pierde calidad por las mismas razones que el GIF: tiene un tipo de compresión basado en el LZW. Con este formato las imágenes no se estropean al guardarlas una y otra vez.</p>
+                        <br><h2 class="copy">SVG (Scalable Vector Graphics)</h2></br>
+                        <p> Traducido como Gráficos vectoriales escalables. Consiste en un formato de gráficos bidimiensionales, tanto estáticos como animados.</p>
+                        <p>Es el único formato digital en archivo vectorial capaz de ser interpretado por navegadores. Se trata de una apuesta por el diseño gráfico en páginas web con ilustraciones vectoriales sin pérdida de calidad. Es una gran ventaja frente a las imágenes de mapas de bits. Ya que podremos usar las imágenes SVG en nuestros proyectos con la libre posibilidad de modificar el tamaño.</p>
+                    </div>
+                </div>
+                <div class="youtube">
+                    <img src="img/f_imagen.jpg" alt="">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/X61yReOfU0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="contenedor-servicio">
+                <img src="img/faudio.jpg" alt="">
+                <div class="checklist-servicio">
+                    <div class="service" id="audio">
+                        <h3 class="n-service"><span class="number">3</span>Formatos de audio</h3>
+                        <br><p> Los formatos de audio se pueden dividir en 3 tipos principales:</p></br>
+                        <div class="vinetas">
+                            <li>Formato de audio sin compresión</li>
+                            <li>Formato de audio comprimido sin pérdidas</li>
+                            <li>Formato de audio comprimido con pérdida</li>
+                        </div>
+                        <br><p>Vamos a analizar los tipos de formato de audio y el grupo al que pertenecen.</p></br>
+                        <br><h2 class="copy">WAV</h2></br>
+                        <p> Uno de los tipos de formato de audio más comunes es WAV, que son las siglas de Waveform Audio File Format. El formato de audio WAV fue desarrollado por Microsoft e IBM en 1991.</p>
+                        <p> WAV es un contenedor de Windows para diferentes formatos de audio. Esto significa que un archivo WAV podría contener audio comprimido, pero rara vez se usa para eso.</p>
+                        <p> La mayoría de los archivos WAV contienen audio sin comprimir en formato PCM. El archivo WAV es solo un contenedor para la codificación PCM, lo que lo hace más adecuado para su uso en sistemas Windows. Sin embargo, los sistemas Mac generalmente pueden abrir archivos WAV sin ningún problema.</p>
+                        <br><h2 class="copy">AIFF</h2></br>
+                        <p> AIFF (Audio Interchange File Format) parecido a cómo Microsoft e IBM desarrollaron WAV para Windows, AIFF es un formato que fue desarrollado por Apple para sistemas Mac en 1988.</p>
+                        <p> También similar a los archivos WAV, los archivos AIFF pueden contener varios tipos de formatos de audio. Por ejemplo, hay una versión comprimida llamada AIFF-C y otra versión llamada Apple Loops que utilizan GarageBand y Logic Audio. Ambos usan la misma extensión AIFF.</p>
+                        <br><h2 class="copy">AU</h2></br>
+                        <p> El formato de audio AU es un formato de archivo de audio simple, desarrollado por Sun Microsystems. El formato era común en las primeras páginas web.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-servicio">
+                
+                <div class="checklist-servicio">
+                    <div class="service">
+                        <br><h2 class="copy">FLAC</h2></br>
+                        <p> FLAC son las siglas de Free Lossless Audio Codec. Se ha convertido rápidamente en uno de los formatos sin pérdida más populares disponibles desde su introducción en 2001.</p>
+                        <p>Lo bueno es que FLAC puede comprimir un archivo fuente original hasta en un 60 por ciento sin perder un solo bit de datos. Lo que es aún mejor es que FLAC es uno de los tipos de formato de audio libres de código abierto, por lo que no impone restricciones de propiedad intelectual.</p>
+                        <br><h2 class="copy">MPEG-4</h2></br>
+                        <p> M4A es una extensión de archivo para un archivo de audio codificado con codificación de audio avanzada (AAC), que es una compresión con pérdida. En general, M4A se pensó como el sucesor de MP3, que no había sido diseñado originalmente solo para audio, sino que podía usarse como formato de video MPEG 1 o 2. M4A son las siglas de MPEG 4 Audio. Las extensiones de archivo M4A y MP3 se utilizan para archivos de solo audio.</p>
+                        <p> La calidad de los archivos M4A es mejor y los tamaños de archivo son más pequeños en comparación con los archivos MP3.</p>
+                        <br><h2 class="copy">Shorten</h2></br>
+                        <p> Shorten (SHN) es un formato de archivo utilizado para comprimir datos de audio. Es una forma de compresión de datos de archivos y se utiliza para compresión sin pérdida de archivos de audio de calidad CD (44,1 kHz 16-bit estéreo PCM).</p>
+                        <br><h2 class="copy">TTA</h2></br>
+                        <p> TTA son las siglas de The True Audio. Es un compresor de audio sin pérdidas en tiempo real gratuito basado en filtros de pronóstico adaptativos. TTA ofrece niveles de compresión adecuados mientras mantiene altas velocidades de operación.</p>
+                        <p> Al no tener pérdida de datos ni de calidad, TTA comprime archivos a tan solo un 30% de su tamaño original (permite el almacenamiento de hasta 20 CD de audio de música en un solo DVD-R). Los requisitos mínimos del sistema lo han hecho bastante popular. </p>
+                    </div>
+                </div>
+                <img src="img/formatosDeAudio.jpg" alt="">
+            </div>
+            
+            <div class="contenedor-servicio">
+                <img src="img/audio_interactivo.jpg" alt="">
+                <div class="checklist-servicio">
+                    <div class="service">
+                        <br><h2 class="copy">Apple Lossless</h2></br>
+                        <p> ALAC son las siglas de Apple Lossless Audio Codec. Fue desarrollado y lanzado en 2004 como un formato propietario, pero finalmente se convirtió en código abierto y libre de regalías en 2011. ALAC a veces se conoce como Apple Lossless.</p>
+                        <p> Si bien ALAC es bueno, es un poco menos eficiente otros tipos de formato de audio como FLAC cuando se trata de compresión. Sin embargo, los usuarios de Apple no tienen realmente una opción entre los dos porque tanto iTunes como iOS brindan soporte nativo para ALAC y ningún soporte para FLAC.</p>
+                        <br><h2 class="copy">MP3</h2></br>
+                        <p> Sin duda, uno de los tipos de formato de audio más conocidos. MP3 son las siglas de MPEG-1 Audio Layer 3. Fue lanzado en 1993 y explotó en popularidad, convirtiéndose finalmente en uno de los formatos de audio más popular del mundo para archivos de música.</p>
+                        <br><p>El objetivo principal de MP3 es triple:</p></br>
+                        <div class="vinetas">
+                            <li>Eliminar todos los datos de sonido que existen más allá del rango auditivo de las personas normales.</li>
+                            <li>Reducir la calidad de los sonidos que no son fáciles de escuchar.</li>
+                            <li>Comprimir todos los demás datos de audio de la manera más eficiente posible.</li>
+                        </div>
+                        <br><p>Casi todos los dispositivos digitales del mundo con reproducción de audio pueden leer y reproducir archivos MP3, ya sea que se trate de PC, Mac, Android, iPhone, Smart TV o cualquier otra cosa. Por ello es uno de los tipos de formatos de audio comerciales más empleados.</p></br>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-servicio">
+                
+                <div class="checklist-servicio">
+                    <div class="service">
+                        <br><h2 class="copy">Vorbis</h2></br>
+                        <p>Este formato se conoce como OGG. OGG no representa nada. En realidad, ni siquiera es un formato de compresión. OGG es un contenedor multimedia que puede contener todo tipo de formatos de compresión, pero se usa más comúnmente para almacenar archivos Vorbis, de ahí que estos archivos de audio se llamen archivos Ogg Vorbis.</p>
+                        <p> Vorbis se lanzó por primera vez en 2000 y su popularidad creció debido a dos razones:</p>
+                        <p>•	Se adhiere a los principios del software de código abierto.</p>
+                        <p>•	Se desempeña significativamente mejor que la mayoría de los otros formatos de compresión con pérdida.</p>
+                        <br><h2 class="copy">Musepack</h2></br>
+                        <p> Es un formato de audio por compresión con un fuerte énfasis en la alta calidad. No es sin pérdidas, pero está diseñado para ser transparente, por lo que no podrás escuchar las diferencias entre el archivo wave original y el archivo MPC mucho más pequeño.</p>
+                        <p> Después de todo, el propósito de un codificador de audio con pérdida es proporcionar la mayor calidad posible con el tamaño de archivo más bajo posible, y Musepack representa el progreso, a diferencia de los métodos heredados antiguos y subóptimos.</p>
+                        <br><h2 class="copy">AAC</h2></br>
+                        <p> AAC son las siglas de Advanced Audio Coding. Fue desarrollado en 1997 como el sucesor de MP3, y si bien se popularizó como formato de uso, nunca superó al MP3 como el más popular.</p>
+                        <p> El algoritmo de compresión utilizado por AAC es mucho más avanzado y técnico que MP3, por lo que cuando compara la misma grabación en formatos MP3 y AAC con las mismas velocidades de bits, el AAC generalmente tendrá una mejor calidad de sonido.</p>
+                    </div>
+                </div>
+                <img src="img/tecnologia-audiovisual2.jpg" alt="">
+            </div>
+            <div class="contenedor-servicio">
+                <div class="youtube">
+                    <img src="img/f_audios.png" alt="">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/RgYDeGTgucw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="checklist-servicio">
+                    <div class="service">
+                        <br><h2 class="copy">WMA</h2></br>
+                        <p> Al igual que AAC y OGG, WMA estaba destinado a abordar algunos de los fallos en el método de compresión MP3, y resulta que el enfoque de WMA para la compresión es bastante similar a AAC y OGG. En términos de calidad de compresión objetiva, WMA es mejor que MP3.</p>
+                        <p> Pero dado que WMA es propietario, no muchos dispositivos y plataformas lo admiten. Tampoco ofrece ningún beneficio real sobre AAC u OGG, por lo que cuando MP3 no es lo suficientemente bueno, es simplemente más práctico usar uno de esos dos en lugar de WMA.</p>
+                        <br><h2 class="copy">Opus</h2></br>
+                        <p> Hace casi una década, el IETF reconoció que Internet necesitaba un códec de audio único y robusto que pudiera usarse para todos los casos de uso de transmisión de audio a través de Internet, desde llamadas de voz hasta distribución de música en vivo.</p>
+                        <p> Opus es uno de los tipos de formato de audio con mayor flexibilidad en relación a cuánto ancho de banda se consume. En la mayoría de los casos en los que los usuarios están en Internet y existe la posibilidad de un rendimiento óptimo, los implementadores deben permitir el muestreo completo predeterminado a 48 kHz y permitir que el códec se sintonice automáticamente con la entrada de audio y las condiciones de la red.</p>
+                        <br><h2 class="copy">OGG</h2></br>
+                        <p> Es un formato de transmisión popular, como lo es WMA, pero, aunque es de código abierto, no ha tenido el mismo desarrollo y aceptación que MP3 y AAC.</p>
+                        <p> OGG suele ser el formato de archivo de audio más pequeño. Pero debido a su falta de compatibilidad, los usuarios generalmente optan por MP3 cuando eligen un formato de audio que aún puede ofrecer una calidad de música agradable mientras mantiene la compatibilidad del tamaño del archivo.</p>
+                        <br>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="contenedor-servicio">
+                <div class="checklist-servicio">
+                    <div class="service" id="video">
+                        <h3 class="n-service"><span class="number">4</span>Formatos de video</h3>
+                        <br><h2 class="copy">AVI (.avi)</h2></br>
+                        <p>Es un formato desarrollado por Microsoft y uno de los primeros compresores de video que se ha creado. Para reproducirlo, necesitas aplicaciones como el Windows Media Player.</p>
+                        <p>En cuanto a la calidad, es un formato simple que almacena pistas de audio y datos de imágenes en el mismo archivo. Por lo tanto, es común que haya cierta pérdida de datos en la compresión y, como resultado, el video no tenga el 100% de la calidad de grabación en el momento de su reproducción.</p>
+                        <br><h2 class="copy">WMV/WMA (.wmv o .asf)</h2></br>
+                        <p>Es un formato desarrollado por Microsoft como reemplazo al AVI. Estos archivos son compatibles con YouTube y pueden preservar la calidad incluso en tamaños de compresión más pequeños. </p>
+                        <p>Un detalle importante es que este formato se basa en el flujo continuo de datos. Esto significa que puedes comenzar a reproducirlo sin descargarlo por completo, lo que es ideal para transmitir en Internet.</p>
+                        <br><h2 class="copy">MOV (.mov)</h2></br>
+                        <p>MOV es un competidor directo del AVI, creado por Apple. Su reproductor predeterminado es el QuickTime Player, pero aplicaciones como Microsoft Windows.</p>
+                        <p>La gran ventaja sobre su “rival” es que la pérdida de datos es mucho menor en la compresión. Entonces, incluso en archivos muy pequeños, MOV puede ofrecer pistas de audio y video de buena calidad.</p>
+                        <br><h2 class="copy">FLV (.flv)</h2></br>
+                        <p>Adobe también tiene su propio formato de video: el FLV. Este es el tipo de archivo más adecuado para la reproducción en YouTube, ya que la plataforma se basa en la tecnología Flash Player.</p>
+                        <p>Los videos Flash son compatibles con la mayoría de los sistemas operativos y tienen extensiones que permiten añadir pistas de imágenes de alta definición. Por estas razones, el formato es muy bien aceptado cuando se graban videos para la web.</p>
+                    </div>
+                </div>
+                <img src="img/descargaf.png" alt="">
+            </div>
+            <div class="contenedor-servicio">
+                <img src="img/videoformato.webp" alt="">
+                <div class="checklist-servicio">
+                    <div class="service">
+                        <br><h2 class="copy">RM (.rm)</h2></br>
+                        <p>El formato RM (RealMedia) ha sido desarrollado por Real Networks, una de las compañías competidoras de Microsoft. Para reproducirlo, tu computadora debe tener el programa RealPlayer o el Real Alternative, un paquete de CODEC compatible con Windows.</p>
+                        <p>La técnica de compresión de este formato se realiza con una tasa de bitrate fija, es decir, una medida predeterminada de los datos transmitidos en un determinado período de tiempo.</p>
+                        <p>Un poco complejo, ¿no? Pero el hecho es que esta técnica hace que los archivos se compriman demasiado y, por lo tanto, pierdan significativamente la calidad de audio e imagen.</p>
+                        <br><h2 class="copy">RMVB (.rmvb)</h2></br>
+                        <p>RMVB, a su vez, es uno de los formatos de video que sí ha funcionado. También de Real Networks, RMVB ha sido durante mucho tiempo un importante competidor de los formatos de Microsoft.</p>
+                        <p>A diferencia del RM/RA, aquí la pérdida de datos es mucho menor. Por lo tanto, el formato permite archivos pequeños ideales para descargas rápidas, pero con calidad de pista preservada.</p>
+                        <br><h2 class="copy">MP4 (.mp4)</h2></br>
+                        <p>Este es uno de los formatos de video más populares. Es el más usual en los dispositivos móviles y, por lo tanto, está presente en la vida cotidiana de muchas personas. También compatible con YouTube y otras plataformas de streaming, la gran ventaja del MP4 es que almacena pistas de audio, video, imágenes fijas y subtítulos en un solo archivo.</p>
+                        <p>Es una variante del MPEG (Moving Picture Expert Group), diseñado para ser revolucionario en preservar la calidad incluso después de la compresión.</p>
+                        <br><h2 class="copy">MKV (.mkv o .mks)</h2></br>
+                        <p>MKV es visto como uno de los formatos de video más prometedores en el mercado debido a una característica distintiva: la democratización de los recursos. Creado por la Asociación Matroska, puede codificar elementos de prácticamente cualquier tipo, como pistas de audio, video, subtítulos, archivos JPEG, filtros y mucho más en un solo contenedor.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-servicio">
+                
+                <div class="checklist-servicio">
+                    <div class="service">
+                        <br><h2 class="copy">3GP (.3gpp)</h2></br>
+                        <p>Por último, el formato 3GP es propio para dispositivos móviles. Desarrollado por la 3rd Generation Partnership Project, su gran ventaja es que permite ver y descargar con menos consumo de banda ancha que el MP4.</p>
+                        <p>Otro beneficio es que el archivo comprimido es muy pequeño. Esto lo hace ideal para cualquier persona que necesite reproducir constantemente un video, ya que puede almacenarse en el dispositivo sin consumir demasiada memoria.</p>
+                        <br><h2 class="copy">H.264</h2></br>
+                        <p>También conocido como H.264 / MPEG-4 AVC (Codificación de Video Avanzada), es muy utilizado para grabar, comprimir y distribuir videos por la alta calidad de imagen que proporciona y su versatilidad de funcionamiento en diversas redes.</p>
+                        <p>Aunque genera archivos que pueden ser grandes para cargar en Internet, cuenta con la ventaja de ser compatible con diversos compresores de video.</p>
+                        <br><h2 class="copy">MPG</h2></br>
+                        <p>A diferencia del anterior, los archivos MPG se pueden almacenar con más facilidad gracias a que es posible comprimirlos y generar archivos pequeños, sin perder la calidad de imagen y audio.</p>
+                        <p>Se trata de un formato universal, versátil y compatible con diferentes sistemas y programas. Se utiliza en la transmisión de televisión, tanto satelital como por cable. Los archivos MPG (Moving Pictures Experts Group – MPEG) se clasifican en dos tipos: MPEG-1 y MPEG-2, que trabajan de forma sincronizada para garantizar su calidad.</p>
+                        <br><h2 class="copy">WebM</h2></br>
+                        <p>Este formato es un proyecto de Google y está pensado para uso libre y online, ya que es compatible con la mayoría de los navegadores.</p>
+                        <div class="flex-form">
+                            <p>Los archivos con extensión *.webm pueden contener audio y video con una calidad similar a la de MP4, pero con un tamaño más reducido. Por eso, esta es una alternativamuy viable para hacer transmisiones en streaming sin perder sus propiedades.</p>
+                            <a href="formatos.html"><img class="boton" 
+                            src="img\boton3.png " ></a>
+                        </div>
+                    </div>
+                </div>
+                <img src="img/img-formato-video.jpg" alt="">
+            </div>
+        
+            
+        </section>
+        <h2 class="subtitulo" id="creadores">Creadores</h2>
+        <section class="experts">
+            
+            <div class="cont-expert">
+                <img src="img/Bryan.png" alt="">
+                <h3 >Bryan Rivadeneira</h3>
+                <h3>22 años</h3>
+                <p>Estudiante de la Carrera en ingeniería de Tecnologías de la Información de la Escuela Superior Politécnica del Chimborazo, sede Morona Santiago.</p>
+            </div>
+            <div class="cont-expert">
+                <img src="img/Ricardo.png" alt="">
+                <h3 >Ricardo Orellana</h3>
+                <h3>22 años</h3>
+                <p>Estudiante de la Carrera en ingeniería de Tecnologías de la Información de la Escuela Superior Politécnica del Chimborazo, sede Morona Santiago.</p>
+            </div>
+            <div class="cont-expert">
+                <img src="img/Howard.jpg" alt="">
+                <h3 >Howard Salas</h3>
+                <h3>22 años</h3>
+                <p>Estudiante de la Carrera en ingeniería de Tecnologías de la Información de la Escuela Superior Politécnica del Chimborazo, sede Morona Santiago.</p>
+            </div>
+            
+        </section>
+
+        <section class="gallery" id="galeria">
+            <div class="contenedor">
+                <h2 class="subtitulo">Galeria</h2>
+                <div class="contenedor-galeria">
+                    <img src="img/fernan.png" class="img-galeria" alt="">
+                    <img src="img/g.gif" class="img-galeria" alt="">
+                    <img src="img/pollo.gif" class="img-galeria" alt="">
+                    <img src="img/paisaje.jpg" class="img-galeria" alt="">
+                    <img src="img/perro.webp" class="img-galeria" alt="">
+                    <img src="img/arrugas.jpg" class="img-galeria" alt="">
+                </div>
+            </div>
+        </section>
+        <div class="imagen-light">
+            <img src="img/close.svg" alt="" class="close">
+            <img src="" alt="" class="agregar-imagen">
+        </div>
+        
+    </main>
+
+    <footer id="footer">
+        <div class="contenedor footer-content">
+                <div class="contact-us">
+                    <h2 class="brand">ESPOCH</h2>
+                    <p>Proyecto de página web Multimedia</p>
+                </div>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/espochms" class="social-media-icon">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="https://twitter.com/EspochRio?t=9xbfF-EW9mQadoRdIrvWtA&s=09" class="social-media-icon">
+                        <i class='bx bxl-twitter' ></i>
+                    </a>
+                    <a href="https://www.instagram.com/espoch_sede_morona_santiago/" class="social-media-icon">
+                        <i class='bx bxl-instagram' >
+						</i>
+                    </a>
+                </div>
+        </div>
+        <div class="line"></div>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/lightbox.js"></script>
+</body>
+</html>

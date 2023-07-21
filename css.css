@@ -1,0 +1,70 @@
+*{
+	padding: 3px;
+	margin: -2px;
+}
+body{
+	/*background: #B5F9EF;*/
+	/*color: #fff;*/
+	font-family: Arial;
+	font-size: 95%;
+	text-align: left;
+	background: #E4DBF6;
+	
+}
+.cuadrado{
+	width: 100%;
+	height: 100px;
+	background: #6833F3;
+}
+/*bloque del cuestionario*/
+#container{
+	width: 50%;
+	background: #FFFFFF;
+	margin: 20px auto;
+	overflow: auto;
+	padding: 20px;
+	box-shadow: 7px 13px 37px #000;
+	border-radius: 3px;
+}
+/*alineacion del contenido*/
+header{
+	text-align: center;
+	border-bottom: #fff dashed 1px;
+
+}
+/*letra del tema*/
+header h1{
+	margin: 10px;
+	padding: 10px;
+	/*color: yellow;*/
+}
+/*texto modifica los espacios*/
+header p{
+	padding: 10px;
+	margin: 5px;
+	/*color: #yellow;*/
+}
+h3{
+	padding: 9px;
+	margin: 9px;
+}
+section{
+	min-height: 410px;
+}
+input{
+	background: #f06226;
+	border: 0;
+	color: #fff;
+	padding: 10px 15px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+#resultado h3{
+	background: #C6DB48;
+	padding:10px;
+	margin: 10px 0;
+}
+#resultado span{
+	color: #000;
+	font-weight: bold;
+}
